@@ -1,0 +1,117 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-shadow: 0 0 3px rgba(0,0,0,0.6);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+  }
+  
+  #time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25%;
+    margin-right: 50%;
+  }
+  #icon{
+    width: 35px;
+  }
+  #greeting {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #time {
+    font-size: 12rem;
+    line-height: 1;
+    font-weight: bold;
+  }
+  
+  #date {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+  
+  #quote-container {
+    background: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-left: 70%;
+    margin-top: -60%;
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  #quote {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #author {
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 0;
+  }
+  
+  #refresh-quote {
+    position: relative;
+    margin-right: 100%;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 0 3px rgba(0,0,0,0.6);
+    width: 50px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    #quote-container {
+      max-width: 75%;
+    }
+  
+    #greeting, #date {
+      font-size: 1rem;
+    }
+  
+    #time {
+      font-size: 4rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #quote-container {
+      max-width: 90%;
+      padding: 1rem;
+    }
+  
+    #greeting, #date {
+      font-size: 0.8rem;
+    }
+  
+    #time {
+      font-size: 3rem;
+    }
+  
+    #quote {
+      font-size: 1rem;
+    }
+  
+    #author {
+      font-size: 0.8rem;
+    }
+  }
+  
